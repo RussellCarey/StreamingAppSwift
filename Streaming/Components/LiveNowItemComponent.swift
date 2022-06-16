@@ -10,7 +10,7 @@ import SwiftUI
 struct LiveNowItemComponent: View {
     var body: some View {
         VStack {
-            // Items here
+            // Items here!!!
         }
         .frame(width: 170, height: 230, alignment: .center)
         .background( Image("csgo")
