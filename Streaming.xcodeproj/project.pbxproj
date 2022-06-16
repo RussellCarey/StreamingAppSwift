@@ -14,6 +14,9 @@
 		117771D5285B0B5900F61782 /* StreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771D4285B0B5900F61782 /* StreamingTests.swift */; };
 		117771DF285B0B5900F61782 /* StreamingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771DE285B0B5900F61782 /* StreamingUITests.swift */; };
 		117771E1285B0B5900F61782 /* StreamingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771E0285B0B5900F61782 /* StreamingUITestsLaunchTests.swift */; };
+		117771F0285B10D300F61782 /* CategoryButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771EF285B10D300F61782 /* CategoryButtonComponent.swift */; };
+		117771F8285B221100F61782 /* LiveNowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771F7285B221100F61782 /* LiveNowComponent.swift */; };
+		117771FA285B222200F61782 /* LiveNowItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771F9285B222200F61782 /* LiveNowItemComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		117771DA285B0B5900F61782 /* StreamingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117771DE285B0B5900F61782 /* StreamingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingUITests.swift; sourceTree = "<group>"; };
 		117771E0285B0B5900F61782 /* StreamingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		117771EF285B10D300F61782 /* CategoryButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonComponent.swift; sourceTree = "<group>"; };
+		117771F7285B221100F61782 /* LiveNowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNowComponent.swift; sourceTree = "<group>"; };
+		117771F9285B222200F61782 /* LiveNowItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNowItemComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,10 @@
 		117771C2285B0B5700F61782 /* Streaming */ = {
 			isa = PBXGroup;
 			children = (
-				117771C3285B0B5700F61782 /* StreamingApp.swift */,
-				117771C5285B0B5700F61782 /* ContentView.swift */,
 				117771C7285B0B5900F61782 /* Assets.xcassets */,
+				117771ED285B0CBD00F61782 /* Views */,
+				117771EE285B0CCE00F61782 /* Components */,
+				117771FB285B24C000F61782 /* Data */,
 				117771C9285B0B5900F61782 /* Preview Content */,
 			);
 			path = Streaming;
@@ -125,6 +132,32 @@
 				117771E0285B0B5900F61782 /* StreamingUITestsLaunchTests.swift */,
 			);
 			path = StreamingUITests;
+			sourceTree = "<group>";
+		};
+		117771ED285B0CBD00F61782 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				117771C3285B0B5700F61782 /* StreamingApp.swift */,
+				117771C5285B0B5700F61782 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		117771EE285B0CCE00F61782 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				117771EF285B10D300F61782 /* CategoryButtonComponent.swift */,
+				117771F7285B221100F61782 /* LiveNowComponent.swift */,
+				117771F9285B222200F61782 /* LiveNowItemComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		117771FB285B24C000F61782 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117771F8285B221100F61782 /* LiveNowComponent.swift in Sources */,
+				117771F0285B10D300F61782 /* CategoryButtonComponent.swift in Sources */,
 				117771C6285B0B5700F61782 /* ContentView.swift in Sources */,
 				117771C4285B0B5700F61782 /* StreamingApp.swift in Sources */,
+				117771FA285B222200F61782 /* LiveNowItemComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +459,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +489,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
