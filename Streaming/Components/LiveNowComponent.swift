@@ -14,32 +14,40 @@ struct LiveNowComponent: View {
                 //MARK: - Title
                 Text("Live Now")
                     .font(.title3)
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
                     .foregroundColor(Color("ColorWhite"))
                 
                 Spacer()
                 
-               //MARK: - NOTCHES
+                //MARK: - NOTCHES
                 HStack {
-                    ForEach(0...2, id: \.self) { notch in
+                    Circle()
+                        .fill(Color("ColorGreen"))
+                        .frame(width: 4.0, height: 4.0, alignment: .leading)
+                    
+                    ForEach(0...1, id: \.self) { notch in
                         Circle()
                             .fill(Color("ColorGrey"))
                             .frame(width: 4.0, height: 4.0, alignment: .leading)
                     }
                 }//: HSTACK
-                .padding(.trailing, 20)
+                .padding(.trailing, 15)
             }//: HSTACK
             
             //MARK: - LIVE VIEW
             ScrollView(.horizontal) {
                 HStack {
                     // LIVENOWIMAGECOMPONENT
-                    
+                    LiveNowItemComponent()
+                    LiveNowItemComponent()
+                    LiveNowItemComponent()
+                    LiveNowItemComponent()
                 }//: HSTACK
             }//: SCROLLVIEW
             
         }//: VSTACK
         .background(Color("ColorDarkPurple"))
+        .padding(.top, 20)
     }
 }
 

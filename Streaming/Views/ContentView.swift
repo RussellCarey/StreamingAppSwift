@@ -36,7 +36,6 @@ struct ContentView: View {
                 .frame(height: 40)
             }//: SCROLLVIEW
             
-            
             // MARK: - LIVE NOW
             LiveNowComponent()
             
@@ -50,7 +49,7 @@ struct ContentView: View {
             // MARK: - BOTTOM BAR?
         }//: VSTACK
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 20)
         .background(Color("ColorDarkPurple"))
     }
     

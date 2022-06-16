@@ -20,7 +20,7 @@ struct CategoryButtonComponent: View {
             isPressed = true
         } label: {
             Text(categoryName)
-                .font(.caption)
+                .font(.callout)
                 .fontWeight(.bold)
         }
         .padding(.horizontal, 20)
