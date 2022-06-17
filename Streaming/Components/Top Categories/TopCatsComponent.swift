@@ -1,0 +1,60 @@
+//
+//  TopCatsComponent.swift
+//  Streaming
+//
+//  Created by Russell Carey on 16/06/2022.
+//
+
+import SwiftUI
+
+struct TopCatsComponent: View {
+    var body: some View {
+        VStack {
+            HStack {
+                //MARK: - Title
+                Text("Live Now")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("ColorWhite"))
+                
+                Spacer()
+                
+                //MARK: - NOTCHES
+                HStack {
+                    Circle()
+                        .fill(Color("ColorGreen"))
+                        .frame(width: 4.0, height: 4.0, alignment: .leading)
+                    
+                    ForEach(0...1, id: \.self) { notch in
+                        Circle()
+                            .fill(Color("ColorGrey"))
+                            .frame(width: 4.0, height: 4.0, alignment: .leading)
+                    }
+                }//: HSTACK
+                .padding(.trailing, 15)
+            }//: HSTACK
+            
+            //MARK: - LIVE VIEW
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    // LIVENOWIMAGECOMPONENT
+                    TopCatsItemComponent()
+                    TopCatsItemComponent()
+                    TopCatsItemComponent()
+                    TopCatsItemComponent()
+                    TopCatsItemComponent()
+                    TopCatsItemComponent()
+                }//: HSTACK
+            }//: SCROLLVIEW
+            
+        }//: VSTACK
+        .background(Color("ColorDarkPurple"))
+        .padding(.top, 20)
+    }
+}
+
+struct TopCatsComponent_Previews: PreviewProvider {
+    static var previews: some View {
+        TopCatsComponent()
+    }
+}

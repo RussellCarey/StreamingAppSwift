@@ -13,19 +13,22 @@ struct ContentView: View {
         
     //BODY: - PROPERTIES
     var body: some View {
-        VStack(alignment: .leading) {
+        ScrollView(.vertical, showsIndicators: false) {
             //MARK: - TITLE
-            Text("Your Favorite")
-                .foregroundColor(Color("ColorWhite"))
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            
-            Text("Streams")
-                .foregroundColor(Color("ColorGreen"))
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
+            VStack(alignment: .leading) {
+                Text("Your Favorite")
+                    .foregroundColor(Color("ColorWhite"))
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                
+                Text("Streams")
+                    .foregroundColor(Color("ColorGreen"))
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
             // MARK: - CATEGORIES
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
@@ -39,11 +42,12 @@ struct ContentView: View {
             // MARK: - LIVE NOW
             LiveNowComponent()
             
-            
             // MARK: - POPULAR STREAMS
+            PopularStreamersComponent()
             
             
             // MARK: - TOP CATS
+            TopCatsComponent()
             
             
             // MARK: - BOTTOM BAR?
