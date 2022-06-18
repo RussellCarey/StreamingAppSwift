@@ -11,7 +11,10 @@
 		1102F4E4285B63180040FDB3 /* PopularStreamersItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102F4E3285B63180040FDB3 /* PopularStreamersItemComponent.swift */; };
 		1102F4E6285B68A70040FDB3 /* TopCatsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102F4E5285B68A70040FDB3 /* TopCatsComponent.swift */; };
 		1102F4E9285B68F00040FDB3 /* TopCatsItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102F4E8285B68F00040FDB3 /* TopCatsItemComponent.swift */; };
-		1102F4EC285CA4160040FDB3 /* ss1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1102F4EB285CA4160040FDB3 /* ss1.png */; };
+		1102F4EF285D41690040FDB3 /* BottomNavBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102F4EE285D41690040FDB3 /* BottomNavBarComponent.swift */; };
+		1102F4F2285D4E7E0040FDB3 /* TopBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102F4F1285D4E7E0040FDB3 /* TopBarComponent.swift */; };
+		1102F4F4285D50F60040FDB3 /* ss1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1102F4F3285D50F60040FDB3 /* ss1.png */; };
+		1102F4F6285D51520040FDB3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1102F4F5285D51520040FDB3 /* README.md */; };
 		117771C4285B0B5700F61782 /* StreamingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771C3285B0B5700F61782 /* StreamingApp.swift */; };
 		117771C6285B0B5700F61782 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117771C5285B0B5700F61782 /* ContentView.swift */; };
 		117771C8285B0B5900F61782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117771C7285B0B5900F61782 /* Assets.xcassets */; };
@@ -46,7 +49,10 @@
 		1102F4E3285B63180040FDB3 /* PopularStreamersItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularStreamersItemComponent.swift; sourceTree = "<group>"; };
 		1102F4E5285B68A70040FDB3 /* TopCatsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCatsComponent.swift; sourceTree = "<group>"; };
 		1102F4E8285B68F00040FDB3 /* TopCatsItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCatsItemComponent.swift; sourceTree = "<group>"; };
-		1102F4EB285CA4160040FDB3 /* ss1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ss1.png; sourceTree = "<group>"; };
+		1102F4EE285D41690040FDB3 /* BottomNavBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBarComponent.swift; sourceTree = "<group>"; };
+		1102F4F1285D4E7E0040FDB3 /* TopBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarComponent.swift; sourceTree = "<group>"; };
+		1102F4F3285D50F60040FDB3 /* ss1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss1.png; path = ../../../../../ss1.png; sourceTree = "<group>"; };
+		1102F4F5285D51520040FDB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		117771C0285B0B5700F61782 /* Streaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117771C3285B0B5700F61782 /* StreamingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingApp.swift; sourceTree = "<group>"; };
 		117771C5285B0B5700F61782 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,14 +123,31 @@
 		1102F4EA285CA4060040FDB3 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				1102F4EB285CA4160040FDB3 /* ss1.png */,
+				1102F4F3285D50F60040FDB3 /* ss1.png */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		1102F4ED285D41510040FDB3 /* Nav Bar */ = {
+			isa = PBXGroup;
+			children = (
+				1102F4EE285D41690040FDB3 /* BottomNavBarComponent.swift */,
+			);
+			path = "Nav Bar";
+			sourceTree = "<group>";
+		};
+		1102F4F0285D4E710040FDB3 /* Top Bar */ = {
+			isa = PBXGroup;
+			children = (
+				1102F4F1285D4E7E0040FDB3 /* TopBarComponent.swift */,
+			);
+			path = "Top Bar";
 			sourceTree = "<group>";
 		};
 		117771B7285B0B5700F61782 = {
 			isa = PBXGroup;
 			children = (
+				1102F4F5285D51520040FDB3 /* README.md */,
 				117771C2285B0B5700F61782 /* Streaming */,
 				117771D3285B0B5900F61782 /* StreamingTests */,
 				117771DD285B0B5900F61782 /* StreamingUITests */,
@@ -192,7 +215,9 @@
 		117771EE285B0CCE00F61782 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1102F4F0285D4E710040FDB3 /* Top Bar */,
 				117771EF285B10D300F61782 /* CategoryButtonComponent.swift */,
+				1102F4ED285D41510040FDB3 /* Nav Bar */,
 				1102F4DF285B624D0040FDB3 /* LiveNow */,
 				1102F4E0285B62600040FDB3 /* Popular Streamers */,
 				1102F4E7285B68C00040FDB3 /* Top Categories */,
@@ -311,8 +336,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1102F4EC285CA4160040FDB3 /* ss1.png in Resources */,
+				1102F4F4285D50F60040FDB3 /* ss1.png in Resources */,
 				117771CB285B0B5900F61782 /* Preview Assets.xcassets in Resources */,
+				1102F4F6285D51520040FDB3 /* README.md in Resources */,
 				117771C8285B0B5900F61782 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +370,8 @@
 				117771F0285B10D300F61782 /* CategoryButtonComponent.swift in Sources */,
 				117771C6285B0B5700F61782 /* ContentView.swift in Sources */,
 				117771C4285B0B5700F61782 /* StreamingApp.swift in Sources */,
+				1102F4EF285D41690040FDB3 /* BottomNavBarComponent.swift in Sources */,
+				1102F4F2285D4E7E0040FDB3 /* TopBarComponent.swift in Sources */,
 				1102F4E2285B62D10040FDB3 /* PopularStreamersComponent.swift in Sources */,
 				117771FA285B222200F61782 /* LiveNowItemComponent.swift in Sources */,
 				1102F4E9285B68F00040FDB3 /* TopCatsItemComponent.swift in Sources */,

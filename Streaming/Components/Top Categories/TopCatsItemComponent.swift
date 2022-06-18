@@ -13,9 +13,7 @@ struct TopCatsItemComponent: View {
             Image("esports1")
                 .resizable()
             
-            VStack {
-                
-            }
+
         }
         .frame(width: 100, height: 100, alignment: .leading)
         .cornerRadius(20)

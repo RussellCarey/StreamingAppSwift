@@ -15,12 +15,11 @@ struct CategoryButtonComponent: View {
   
     //MARK: - BODY
     var body: some View {
-        
         Button{
             isPressed = true
         } label: {
             Text(categoryName)
-                .font(.callout)
+                .font(.caption)
                 .fontWeight(.bold)
         }
         .padding(.horizontal, 20)
